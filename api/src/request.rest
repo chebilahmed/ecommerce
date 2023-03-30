@@ -7,3 +7,14 @@ Content-Type: application/json
 {
 "text": "hi man"
 }
+###
+POST  http://localhost:2000/api/signUp
+Content-Type: application/json
+
+{
+
+    "firstName":"chebil",
+    "lastName":"ahmed",
+    "email":"ahmed@chebil.com",
+"password":"12345678"
+}

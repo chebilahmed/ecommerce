@@ -4,15 +4,15 @@ const env= require('dotenv');
 const mongoose = require('mongoose');
 const app= express();
 
+const userRoutes= require("../routes/user")
+
+
+
 env.config();
 
 app.use(bodyParser())
 
-
-
-
-
-
+app.use('/api',userRoutes)
 
 mongoose.connect(`mongodb+srv://${process.env.mongo_user_db}:${process.env.mongo_pass_db}@cluster0.qbg0zl3.mongodb.net/?retryWrites=true&w=majority`,
 
@@ -26,18 +26,6 @@ mongoose.connect(`mongodb+srv://${process.env.mongo_user_db}:${process.env.mongo
 // 
 
 
-
-app.get('/' ,(req,res,next)=>{
-    res.status(200).json({
-        "message": "hello",
-    })
-})
-
-app.post('/data' ,(req,res,next)=>{
-    res.status(200).json({
-        "message": req.body,
-    })
-})
 
 app.listen(process.env.PORT,()=>{
     console.log('listening on port '+process.env.PORT)
