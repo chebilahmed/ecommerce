@@ -15,6 +15,15 @@ Content-Type: application/json
 
     "firstName":"chebil",
     "lastName":"ahmed",
-    "email":"ahmed@chebil.com",
+    "email":"athmed@cjhebil.com",
 "password":"12345678"
+}
+
+###
+POST  http://localhost:2000/api/signIn
+Content-Type: application/json
+
+{
+    "email":"athmed@chebil.com",
+    "password":"12345678"
 }
