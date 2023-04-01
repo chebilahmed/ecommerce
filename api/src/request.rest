@@ -27,3 +27,34 @@ Content-Type: application/json
     "email":"athmed@chebil.com",
     "password":"12345678"
 }
+
+###
+POST  http://localhost:2000/api/profile
+Content-Type: application/json
+Authorization:  bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDI2YjcwYTU2ZGE5NTgzYWZiNGI4MTkiLCJpYXQiOjE2ODAzNzY4MTgsImV4cCI6MTY4MDM4MDQxOH0.Yjd-bOR2K7RJcBbr6zIDmNhF6oImIvF6I_5lJQ2rgq4
+
+###
+Post http://localhost:2000/api/admin/signIn
+Content-Type: application/json
+
+{
+    "email":"ahh@cjfhdkhebil.com",
+    "password":"123456fg78"
+}
+
+###
+POST  http://localhost:2000/api/admin/signUp
+Content-Type: application/json
+
+{
+
+    "firstName":"chegfbil",
+    "lastName":"ahmfgfed",
+    "email":"ahh@cjfhdkhebil.com",
+"password":"123456fg78"
+}
+
+###
+POST  http://localhost:2000/api/profile
+Content-Type: application/json
+Authorization:  bearer -eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDI4OGFlMjllYWFlZjA1ZjMyYzVjNzMiLCJpYXQiOjE2ODAzNzg3MzIsImV4cCI6MTY4MDM4MjMzMn0.1jK13fpoM2Py2R1OWGCaeF_SbDWQ9jjAgKZPi5GzKaY

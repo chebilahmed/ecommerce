@@ -1,4 +1,4 @@
-const User = require('../models/user')
+const User = require('./../models/user')
 const jwt = require('jsonwebtoken')
 
 
@@ -77,5 +77,18 @@ exports.signIn = (req,res) => {
     return res.status(400).json({ message: 'Something went wrong' })
   })
 
+
+}
+
+
+exports.requireSign = (req, res,next)=>{
+
+    const token = req.headers.authorization.split(" ")[1];
+    const user = jwt.verify(token, process.env.jwt_secret);
+    console.log(user);
+    req.user=user
+    
+
+    next()
 
 }
