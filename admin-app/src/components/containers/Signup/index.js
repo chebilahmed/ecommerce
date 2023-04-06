@@ -17,7 +17,8 @@ export default function Signup() {
                       label="First Name"
                       type="text"
                       placeHolder="First Name"
-                      errorMessage=""
+                      value=""
+                      onChange={() => {}}
                     />
                   </Col>
                   <Col md={6}>
@@ -25,28 +26,26 @@ export default function Signup() {
                       label="Last Name"
                       type="text"
                       placeHolder="Last Name"
-                      errorMessage=""
+                      value=""
+                      onChange={() => {}}
                     />
                   </Col>
                 </Row>
                 <Input
                   label="Email address"
-                  type="text"
+                  type="email"
                   placeHolder="Last Name"
-                  errorMessage=""
+                  value=""
+                  onChange={() => {}}
                 />
-                <Form.Group className="mb-3" controlId="formBasicEmail">
-                  <Form.Label>Email address</Form.Label>
-                  <Form.Control type="email" placeholder="Enter email" />
-                  <Form.Text className="text-muted">
-                    We'll never share your email with anyone else.
-                  </Form.Text>
-                </Form.Group>
+                <Input
+                  label="password"
+                  type="password"
+                  placeHolder="password"
+                  value=""
+                  onChange={() => {}}
+                />
 
-                <Form.Group className="mb-3" controlId="formBasicPassword">
-                  <Form.Label>Password</Form.Label>
-                  <Form.Control type="password" placeholder="Password" />
-                </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
                   <Form.Check type="checkbox" label="Check me out" />
                 </Form.Group>
