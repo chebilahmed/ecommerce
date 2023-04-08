@@ -50,7 +50,7 @@ Content-Type: application/json
 
     "firstName":"chegfbil",
     "lastName":"ahmfgfed",
-    "email":"ahh@cjfhdkhebil.com",
+    "email":"ahch@cjfhdhjkhebil.com",
 "password":"123456fg78"
 }
 
@@ -58,3 +58,15 @@ Content-Type: application/json
 POST  http://localhost:2000/api/profile
 Content-Type: application/json
 Authorization:  bearer -eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDI4OGFlMjllYWFlZjA1ZjMyYzVjNzMiLCJpYXQiOjE2ODAzNzg3MzIsImV4cCI6MTY4MDM4MjMzMn0.1jK13fpoM2Py2R1OWGCaeF_SbDWQ9jjAgKZPi5GzKaY
+
+###
+http://localhost:2000/api/admin/signUp
+POST  http://localhost:2000/api/signUp
+Content-Type: application/json
+
+{
+"firstName":"chegfbil",
+"lastName":"ahmfgfed",
+    "email":"ahch@cjfkhdhjkhebil.com",
+    "password":"124356"
+}
